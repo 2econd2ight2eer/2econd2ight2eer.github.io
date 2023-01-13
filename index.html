@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <title>𝙣𝙞𝙠𝙤'𝙨 𝙥𝙤𝙧𝙩𝙛𝙤𝙡𝙞𝙤</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/win95 popup.css" media="screen"/>
+    <link rel="icon" type="image/x-icon" href="css/img/QUIVERING.webp">
+
+</head>
+<body ALIGN="center" onload="loading()">
+    <!-- audios -->
+    <audio id="music">
+        <source src="css/audio/fallen down.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <audio id="home">
+        <source src="js/navbar/home.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <audio id="about">
+        <source src="js/navbar/about.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <audio id="contact">
+        <source src="js/navbar/contact.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <audio id="homeDesc">
+        <source src="js/navbar/get out.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <audio id="drop">
+        <source src="js/navbar/navopen.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <audio id="meow">
+        <source src="js/navbar/meow.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <audio id="sparkle">
+        <source src="js/navbar/sparkle.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <audio id="error">
+        <source src="js/navbar/error.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <audio id="success">
+        <source src="js/navbar/success.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <!-- audios end -->
+    <div id="loader"><span id="wipe">loading...</span></div>
+    <div id="everything" style="display:none;" class="animate-bottom" ALIGN="center">
+      <div id="drop-up">
+        <button id="navBtn" onclick="showNavbar()" style="font-size: 14px; padding: 4px;">navigation</button>
+      </div>
+                <div id="navbar">
+                    <a id="homeBtn" onclick="playHome()" href="#title">home</a><span> ⸸ </span>
+                    <a id="aboutBtn" onclick="playAbout()" href="#aboutme">about</a><span> ⸸ </span>
+                    <a id="contactBtn" onclick="playContact()" href="#contactme">contact</a>
+        </div>
+        <div id="main" ALIGN="center">
+            <p id="title"><pre>
+ __  o |__,  __  |    __  o  ''  __ 
+ |  ) | |  \ (__) |_, (__( |     __)  
+</pre></p>
+<p style="font-size: smaller; margin:0px;">portfolio of stuff.</p>
+<p>
+  <div id="button1">
+    <span id="note">
+      <span class="del6s">║</span>
+      <span class="del5s">▒</span>
+      <span class="del4s">░</span>
+      <span class="del2s">║</span>
+      <span class="del1s5ms">▒</span>
+      <span class="del1s">░</span>
+      <button id="play" onclick="toggleMusic()" style="font-family: Arial; margin-top: 0%;">▶</button>
+      <span class="del1s">░</span>
+      <span class="del1s5ms">▒</span>
+      <span class="del2s">║</span>
+      <span class="del4s">░</span>
+      <span class="del5s">▒</span>
+      <span class="del6s">║</span>
+    </span>
+</div>
+  <div id="ascii">
+    <p id="ascii"><pre onclick="meow()" style="font-family: Arial, Helvetica, sans-serif; font-size: 25px; padding-top: 4%;">
+─▄───▄
+─█▀█▀█
+─█▄█▄█
+       ─███──▄▄
+       ─████▐█─█
+       ─████───█
+       ─▀▀▀▀▀▀▀  
+    </pre></p>
+  </div>
+  <div id="textHome">
+    <h3>─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─</h3>
+    <br><p>come back to the old-school style of web design. reject modernity. embrace tradition.</p>
+    <img src="css/img/cat.gif" id="cat"><br>
+    <button type="button" id="homeRead" onclick="readHome()" style="font-size: smaller;"><span style="font-family: webdings; font-size: 20px;">X</span> read aloud <span style="font-size: 20px; font-family: webdings;">W</span></button>
+    <p>the internet is the first thing that humanity has built that humanity doesn't understand, the largest experiment in anarchy that we have ever had. your website is the center of your digital eco-system, like a brick and mortar location, the experience matters once someone enters, just as much as the perception they have of you before they walk through the door. the internet is based on your own understanding. nothing is definite. humanity will never fully understand the capacity the internet has. we can only sit and watch.</p>
+    <br><h3>─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─</h3>
+  </div>
+</p>
+<div id="aboutme">
+  <p><pre>
+                                                
+  __  |__   __        _|_       __ __   ___  
+ (__( |__) (__) (__(_  |_,     |  )  ) (__/_ 
+  </pre></p>
+  <img id="niko" style="width: 300px;" src="css/img/niko.png"
+  onmouseover="this.src='css/img/nikosmile.png';"
+  onmouseout="this.src='css/img/niko.png';">
+  <div id="abtWin">
+        <div class="win98popup shadow">
+          <div class="bar">
+            <p>about me</p>
+          </div>
+          <section>
+            <p id="window">hi! im nikolai. i'm a student webdev. i make websites for fun.</p>
+          </section>
+          <div class="buttons">
+            <button class="shadow" id="popButtons" onclick="changeText()"><img src="https://raw.githubusercontent.com/mbledkowski/win98popup/master/outline.svg" alt="" width="fit-content"><p id="buttonWin">hi nikolai!</p></button>
+          </div>
+        </div>
+  </div>
+</div>
+<H3 id="break">─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─</H3>
+<div id="contactme">
+  <p><pre>                                
+  __   __   __  _|_   __   __  _|_       __ __   ___  
+ (___ (__) |  )  |_, (__( (___  |_,     |  )  ) (__/_ 
+                                                      
+  </pre></p>
+  
+  <div id="contactfield" ALIGN="left">
+    <P> ─ ─ send me a message! <img src="css/img/heart.webp" style="height: 18px;"  ></P>
+    <input type="text" id="txtUsername" placeholder="name"/>
+    <p class="error" id="usernameError"></p>
+
+    <input type="text" id="txtEmail" placeholder="email"/>
+    <p class="error" id="emailError"></p>
+
+    <textarea id="txtMessage" rows="4" cols="35" placeholder="say something!"></textarea>
+    <p class="error" id="messageError"></p>
+</div>
+<br>
+<div>
+<div class="box">
+  <img src="css/img/love.webp" width="100px" id="send" href="#popup1"
+  onmouseover="this.src='css/img/love2.webp';
+  "onmouseout="this.src='css/img/love.webp';">
+</div>
+<div id="overlay">
+  <div id="text">
+    <div class="win98popup shadow">
+      <div class="bar">
+        <p>thanks!</p>
+      </div>
+      <section>
+        <p id="window">message sent successfully!</p>
+      </section>
+      <div class="buttons">
+        <button class="shadow" id="popButtons" onclick="off()"><img src="https://raw.githubusercontent.com/mbledkowski/win98popup/master/outline.svg" alt="" width="fit-content"><p id="buttonWin">OK</p></button>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+  <p id="titleHistory"> ─ ─ things you send will appear here:</p>
+  <div id="divHistory" style="height: 130px; display: inline-block;">
+    <p id="history" style="font-size: 14px; align-content: flex-start; margin: 30px;" ALIGN="left"></p>
+  </div>
+</div>
+</div>
+</div> 
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="js/win95.js"></script>
+<script type="text/javascript" src="js/loader.js"></script>
+<script type="text/javascript" src="js/contact-field.js"></script>
+<script type="text/javascript" src="js/neon-text.js"></script>
+<script type="text/javascript" src="js/audio.js"></script>
+<script type="text/javascript" src="js/div-hide.js"></script>
+</html>
+
